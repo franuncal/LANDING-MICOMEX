@@ -1,0 +1,201 @@
+/* Contacto */
+.contact-section {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1; /* Ocupa la mitad del ancho */
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-align: start;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-family: "akatab", sans-serif;
+  display: flex;
+  align-items: center; /* Centrado vertical de los íconos y el texto */
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #b24c11;
+}
+
+.contact-info a {
+  color: #110f10;
+  text-decoration: none;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem; /* Reducido de 2rem */
+  background-color: #ddd;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espacio entre cada campo */
+}
+
+.contact-form label {
+  position: absolute; /* Ocultar los labels, pero mantenerlos accesibles */
+  left: -9999px; /* Sacarlos de la vista */
+}
+
+.contact-form label.service-label,
+.contact-form label.message-label {
+  position: static; /* Mostrar estos labels */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form select::placeholder,
+.contact-form textarea::placeholder {
+  color: #888; /* Color del placeholder */
+  font-size: 1rem; /* Tamaño adecuado */
+}
+
+.contact-form button {
+  padding: 0.8rem 1.2rem;
+  background-color: #b24c11;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  align-self: center;
+  margin-top: 1rem;
+  width: auto; /* Evitar que el botón ocupe todo el ancho */
+}
+
+.contact-form button:hover {
+  background-color: #d1692d;
+}
+/* Media Queries */
+
+/* Para pantallas medianas (768px) */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Cambiar a columna en pantallas medianas */
+    gap: 2rem; /* Mayor espacio entre los elementos */
+  }
+
+  .contact-info h2 {
+    font-size: 1.6rem; /* Reducir tamaño del título */
+    margin-bottom: 2rem;
+  }
+
+  .contact-info ul li {
+    font-size: 1rem; /* Mantener tamaño de fuente para que sea legible */
+    margin: 1rem 0; /* Ajustar márgenes para que no se vea tan apretado */
+  }
+
+  .contact-form {
+    width: 100%; /* Hacer que el formulario ocupe todo el ancho disponible */
+    max-width: 100%; /* Eliminar el límite de ancho máximo */
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 1rem; /* Mantener un tamaño adecuado en los campos */
+  }
+
+  .contact-form button {
+    font-size: 1.1rem; /* Asegurar que el botón sea cómodo de leer */
+    padding: 0.8rem 1.5rem; /* Ajustar padding del botón */
+  }
+}
+
+/* Para pantallas pequeñas (480px) */
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.5rem; /* Reducir tamaño del título */
+    margin-bottom: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.3rem; /* Reducir tamaño del título de la info de contacto */
+  }
+
+  .contact-info ul li {
+    font-size: 0.9rem; /* Reducir tamaño de fuente para que sea más compacto */
+  }
+
+  .contact-info ul li i {
+    font-size: 1.3rem; /* Reducir tamaño de íconos para mejor alineación */
+  }
+
+  .contact-form {
+    padding: 1rem; /* Reducir padding en el formulario */
+  }
+
+  .contact-form label {
+    font-size: 1rem; /* Ajustar tamaño de las etiquetas */
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 1rem; /* Reducir tamaño de fuente para que sea más legible */
+  }
+
+  .contact-form button {
+    padding: 0.8rem 1rem; /* Ajustar tamaño de botón */
+    font-size: 1rem; /* Reducir tamaño de fuente */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    gap: 1rem; /* Ajustar espacio entre los elementos */
+  }
+
+  .contact-info ul li {
+    margin: 0.5rem 0; /* Reducir el espacio entre los ítems */
+  }
+}

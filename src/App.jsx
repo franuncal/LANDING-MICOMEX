@@ -5,6 +5,9 @@ import SolucionTransporte from "./componenets/Transporte/SolucionTransporte";
 import TransporteEspecial from "./componenets/TranporteEspecial/TransporteEspecial";
 import QueOfrecemos from "./componenets/Servicios/QueOfrecemos";
 import Adicionales from "./componenets/Adicionales/Adicionales";
+import EmpresasQueConfian from "./componenets/EmpresasQueConfian/EmpresasQueConfian";
+import Ventajas from "./componenets/Ventajas/Ventajas";
+import Contact from "./componenets/Contacto/Contact";
 import "./App.css";
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
       <SolucionTransporte />
       <TransporteEspecial />
       <Adicionales />
+      <Ventajas />
+      <EmpresasQueConfian />
+      <Contact />
       {/* Otros componentes */}
     </div>
   );

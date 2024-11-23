@@ -24,7 +24,7 @@ const QueOfrecemos = () => {
 
   return (
     <section className="que-ofrecemos" id="que-ofrecemos">
-      <h2>Qué Ofrecemos</h2>
+      <h2>Nuestros Servicios</h2>
       <p>
         Brindamos servicios integrales diseñados para cubrir todas las
         necesidades logísticas, asegurando un proceso eficiente y seguro para tu

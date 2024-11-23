@@ -1,13 +1,12 @@
 .adicionales {
   padding: 50px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: rgb(247, 241, 241);
 }
 
 .adicionales h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #b24c11;
+  margin-bottom: 2rem;
 }
 
 .adicionales .container {
@@ -49,7 +48,7 @@
 .adicionales .card-title {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #000;
+  /* color: #fff; */
   text-align: center;
 }
 

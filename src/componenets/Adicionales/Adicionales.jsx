@@ -23,7 +23,7 @@ const Adicionales = () => {
   return (
     <section className="adicionales">
       <div className="container">
-        <h2>Además ofrecemos servicios de:</h2>
+        <h2>Además Ofrecemos:</h2>
         <div className="grid">
           {servicios.map((servicio, index) => (
             <div key={index}>
