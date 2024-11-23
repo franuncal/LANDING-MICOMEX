@@ -1,0 +1,79 @@
+/* Estilo global */
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(245, 241, 240);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo del contenedor principal */
+.App {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b24c11;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
+  color: #040c64;
+}
+
+/* Botones */
+button {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #040c64;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b24c11;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clases utilitarias */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}

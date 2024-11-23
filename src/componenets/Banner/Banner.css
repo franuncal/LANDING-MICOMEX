@@ -1,0 +1,122 @@
+/* Banner contenedor principal */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* El banner ocupará el 90% de la altura de la ventana */
+  overflow: hidden;
+}
+
+/* Video de fondo */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Contenedor del contenido (texto y botón) */
+.banner-content {
+  position: relative;
+  z-index: 2; /* El contenido se coloca encima del video */
+  text-align: start;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* Estilo de los títulos */
+.banner-text h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.banner-text h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+/* Contenedor y estilo del botón */
+.cta-container {
+  margin-top: 3rem;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  color: #ddd;
+  background-color: #b24c11;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #d1692d;
+}
+
+/* Filtro opaco sobre el video */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+  z-index: 1; /* Coloca el filtro encima del video pero debajo del texto */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}

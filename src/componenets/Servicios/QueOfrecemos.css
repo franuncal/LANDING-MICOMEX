@@ -1,0 +1,91 @@
+/* Estilos generales */
+.que-ofrecemos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem; /* Espaciado general */
+  text-align: center;
+  color: #333;
+}
+
+.que-ofrecemos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #b24c11;
+}
+
+.que-ofrecemos p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Rejilla de servicios */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 0 1rem; /* Espaciado interno para evitar bordes */
+}
+
+/* Tarjetas individuales */
+.servicio-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px; /* Controlamos un ancho máximo para todas las tarjetas */
+  height: 250px; /* Forzamos un alto fijo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icono de servicio */
+.servicio-card .icon {
+  font-size: 2.5rem;
+  color: #b24c11;
+  margin-bottom: 1rem;
+}
+
+.servicio-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .que-ofrecemos h2 {
+    font-size: 2rem;
+  }
+
+  .que-ofrecemos p {
+    font-size: 1rem;
+  }
+
+  .servicios-grid {
+    padding: 0 1rem; /* Aseguramos espacio lateral */
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-grid {
+    grid-template-columns: repeat(1, 1fr); /* Mostramos 2 columnas en móviles */
+    gap: 1rem; /* Reducimos el espacio entre tarjetas */
+    padding: 0 1rem; /* Espacio adicional para móviles */
+  }
+
+  .servicio-card {
+    height: 220px; /* Ajustamos el tamaño para móviles */
+  }
+}

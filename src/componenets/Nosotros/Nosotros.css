@@ -1,0 +1,76 @@
+/* Nosotros */
+.nosotros {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+}
+
+.nosotros .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Diseño apilado por defecto */
+  gap: 20px;
+}
+
+.nosotros .text-title {
+  display: flex;
+  flex-direction: row; /* Alinea los bloques de texto horizontalmente */
+  gap: 5rem;
+  justify-content: space-between; /* Espacio entre los bloques de texto */
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.nosotros .text-block {
+  flex: 1; /* Cada bloque ocupa el mismo espacio */
+  margin-bottom: 2rem;
+}
+
+.nosotros .text-block h2 {
+  font-size: 1.8rem;
+  color: #110f10;
+  margin-bottom: 20px;
+}
+
+.nosotros .text-block p {
+  font-size: 1rem;
+  color: #110f10;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.nosotros-img {
+  margin-top: 20px;
+}
+
+.nosotros-img img {
+  width: 100%; /* Ocupa todo el ancho */
+  height: auto;
+  max-height: 300px; /* Controla la altura máxima */
+  object-fit: cover; /* Asegura que la imagen se recorte para encajar */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nosotros .text-title {
+    flex-direction: column; /* Apila los bloques de texto en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+  }
+
+  .nosotros .text-block {
+    flex: unset; /* Permite apilado completo */
+    margin-bottom: 5px; /* Reducimos la separación entre los bloques */
+  }
+
+  .nosotros .text-block p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .nosotros .text-block h2 {
+    margin-bottom: 10px; /* Reducimos el margen inferior del título */
+  }
+}
