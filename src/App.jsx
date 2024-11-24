@@ -30,9 +30,7 @@ function App() {
       <Banner />
       <Nosotros />
       <QueOfrecemos />
-
       <SolucionTransporte />
-
       <TransporteEspecial />
       <Adicionales />
       <Ventajas />
