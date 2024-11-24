@@ -30,7 +30,7 @@ const QueOfrecemos = () => {
         necesidades logísticas, asegurando un proceso eficiente y seguro para tu
         mercadería.
       </p>
-      <div className="servicios-grid">
+      <div className="servicios-grid" data-aos="fade-up" data-aos-delay="200">
         {servicios.map((servicio) => (
           <div className="servicio-card" key={servicio.id}>
             <div className="icon">{servicio.icon}</div>

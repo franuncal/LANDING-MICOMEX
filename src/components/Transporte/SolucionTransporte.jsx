@@ -10,7 +10,12 @@ const SolucionTransporte = () => {
         <h2>Soluciones Integradas de Transporte</h2>
 
         {/* Fletes Terrestres */}
-        <div className="card" style={{ backgroundImage: `url(${imgT1})` }}>
+        <div
+          className="card"
+          data-aos="fade-left"
+          data-aos-delay="200"
+          style={{ backgroundImage: `url(${imgT1})` }}
+        >
           <div className="card-content">
             <h3>Fletes Terrestres - LTL o FTL</h3>
             <p className="p-breve">
@@ -32,7 +37,12 @@ const SolucionTransporte = () => {
         </div>
 
         {/* Fletes Marítimos */}
-        <div className="card" style={{ backgroundImage: `url(${imgT2})` }}>
+        <div
+          className="card"
+          data-aos="fade-right"
+          data-aos-delay="200"
+          style={{ backgroundImage: `url(${imgT2})` }}
+        >
           <div className="card-content">
             <h3>Fletes Marítimos</h3>
             <p className="p-breve">
@@ -55,7 +65,12 @@ const SolucionTransporte = () => {
         </div>
 
         {/* Fletes Aéreos */}
-        <div className="card" style={{ backgroundImage: `url(${imgT3})` }}>
+        <div
+          className="card"
+          data-aos="fade-left"
+          data-aos-delay="200"
+          style={{ backgroundImage: `url(${imgT3})` }}
+        >
           <div className="card-content">
             <h3>Fletes Aéreos</h3>
             <p className="p-breve">

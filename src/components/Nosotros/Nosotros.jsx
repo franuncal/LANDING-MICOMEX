@@ -8,7 +8,7 @@ const Nosotros = () => {
     <section className="nosotros" id="nosotros">
       <div className="container">
         <div className="text-title">
-          <div className="text-block">
+          <div className="text-block" data-aos="fade-up">
             <h2>Quiénes Somos</h2>
             <p>
               Somos una empresa joven y dinámica especializada en Comercio
@@ -19,7 +19,7 @@ const Nosotros = () => {
               logística global.
             </p>
           </div>
-          <div className="text-block">
+          <div className="text-block" data-aos="fade-up" data-aos-delay="200">
             <h2>Ganá con nuestra experiencia</h2>
             <p>
               Como equipo de trabajo aprovechamos nuestras sinergias recurriendo

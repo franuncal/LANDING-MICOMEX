@@ -1,4 +1,6 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Nosotros from "./components/Nosotros/Nosotros";
@@ -10,17 +12,27 @@ import EmpresasQueConfian from "./components/EmpresasQueConfian/EmpresasQueConfi
 import Ventajas from "./components/Ventajas/Ventajas";
 import Contact from "./components/Contacto/Contact";
 import Footer from "./components/Footer/Footer";
+// import { ParallaxProvider } from "react-scroll-parallax";
 
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de la animación
+      once: true, // Para que la animación solo se ejecute una vez
+    });
+  }, []);
+
   return (
     <div>
       <Navbar />
       <Banner />
       <Nosotros />
       <QueOfrecemos />
+
       <SolucionTransporte />
+
       <TransporteEspecial />
       <Adicionales />
       <Ventajas />
