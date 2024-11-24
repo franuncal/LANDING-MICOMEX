@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: #b24c11;
 }
 
 /* Encabezados */
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: #b24c11;
+  background-color: #fff;
 }
 
 button:focus {

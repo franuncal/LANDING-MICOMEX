@@ -14,8 +14,8 @@ const SolucionTransporte = () => {
           <div className="card-content">
             <h3>Fletes Terrestres - LTL o FTL</h3>
             <p className="p-breve">
-              Ofrecemos transporte terrestre de mercancías (LTL y FTL) tanto a
-              nivel nacional como internacional.
+              Ofrecemos transporte terrestre de mercancías tanto a nivel
+              nacional como internacional.
             </p>
             <p className="p-completo">
               El envío terrestre es la alternativa más utilizada dentro del
@@ -42,7 +42,7 @@ const SolucionTransporte = () => {
             <p className="p-completo">
               El transporte marítimo es crucial para el comercio internacional,
               representando más del 80% de las importaciones y exportaciones. En
-              <strong> MI Logistica</strong> optimizamos costos y tiempos de
+              <strong> M.I Logistica</strong> optimizamos costos y tiempos de
               tránsito con las principales líneas marítimas. Somos expertos en
               el manejo de cargas peligrosas, sobredimensionadas, refrigeradas y
               secas.
@@ -65,8 +65,8 @@ const SolucionTransporte = () => {
             <p className="p-completo">
               El transporte aéreo es seguro, permitiendo cubrir grandes
               distancias de manera rápida y eficiente ideal para cumplir con los
-              plazos en la cadena de suministro. CONSOLIDADOS - CHARTERS -
-              CARGAS PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL
+              plazos en la cadena de suministro. <br /> CONSOLIDADOS - CHARTERS
+              - CARGAS PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL.
             </p>
 
             <a href="#contacto" className="contact-btn">

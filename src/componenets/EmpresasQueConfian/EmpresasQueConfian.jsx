@@ -3,7 +3,7 @@ import img from "../../assets/logos/denver.png";
 import img1 from "../../assets/logos/lumi.svg";
 import img2 from "../../assets/logos/remolac.png";
 import img3 from "../../assets/logos/parme.jpg";
-import img4 from "../../assets/logos/wdlogo.jpg";
+import img4 from "../../assets/logos/wd1.png";
 import img5 from "../../assets/logos/geva.png";
 import img6 from "../../assets/logos/bosque2.svg";
 import img7 from "../../assets/logos/restinga.png";
@@ -17,13 +17,13 @@ const EmpresasQueConfian = () => {
     { src: img1, alt: "Lumilagro" },
     { src: img2, alt: "Ramolac" },
     { src: img3, alt: "La Parmesana" }, //Cambiar
-    { src: img4, alt: "W.D SRL" },
+    { src: img9, alt: "BSF" },
     { src: img5, alt: "Distribuidora GEVA" },
     { src: img6, alt: "Bosque Gin" },
     { src: img7, alt: "Restinga Gin" },
     { src: img8, alt: "Argensun Food" },
-    { src: img9, alt: "BSF" },
     { src: img10, alt: "Buckingham" },
+    { src: img4, alt: "W.D SRL" },
   ];
 
   return (

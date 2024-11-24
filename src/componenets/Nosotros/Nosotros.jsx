@@ -31,7 +31,7 @@ const Nosotros = () => {
               experiencia en logística global para ofrecerle los mejores
               resultados cuidando cada detalle de la operación de principio a
               fin. La confianza y la transparencia son los valores fundamentales
-              de <strong>MI LOGISTICA Y COMERCIO EXTERIOR</strong>. Nuestra
+              de <strong>M.I LOGISTICA Y COMERCIO EXTERIOR</strong>. Nuestra
               filosofía y nuestros servicios reflejan calidad y excelencia en
               todo lo que hacemos.
             </p>
