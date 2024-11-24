@@ -27,14 +27,22 @@
 }
 
 .nosotros .text-block h2 {
-  font-size: 1.8rem;
-  color: #110f10;
+  font-size: 2rem;
   margin-bottom: 20px;
+}
+
+.nosotros .text-block h2::after {
+  content: "";
+  display: block;
+  width: 80px; /* El ancho de la línea */
+  height: 4px; /* El grosor de la línea */
+  background: #040c64; /* Color de la línea */
+  margin: 15px auto 10px; /* Margen para centrarla */
+  border-radius: 2px; /* Bordes redondeados */
 }
 
 .nosotros .text-block p {
   font-size: 1rem;
-  color: #110f10;
   line-height: 1.6;
   text-align: justify;
   margin-bottom: 2rem;

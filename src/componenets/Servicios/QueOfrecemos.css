@@ -13,6 +13,16 @@
   color: #b24c11;
 }
 
+.que-ofrecemos h2::after {
+  content: "";
+  display: block;
+  width: 80px; /* El ancho de la línea */
+  height: 4px; /* El grosor de la línea */
+  background: #b24c11; /* Color de la línea */
+  margin: 10px auto 0; /* Margen para centrarla */
+  border-radius: 2px; /* Bordes redondeados */
+}
+
 .que-ofrecemos p {
   font-size: 1.2rem;
   margin-bottom: 2rem;

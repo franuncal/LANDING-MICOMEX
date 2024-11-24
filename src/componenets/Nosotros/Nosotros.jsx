@@ -1,4 +1,4 @@
-import { FaStar } from "react-icons/fa"; // Importa el icono de estrella
+// import { FaStar } from "react-icons/fa";
 import "./Nosotros.css";
 import img from "../../assets/img/nosotros2.png";
 
@@ -18,10 +18,10 @@ const Nosotros = () => {
               logística global.
             </p>
             {/* Agregar botón de certificados */}
-            <a href="/certificados" className="certificados-btn">
+            {/* <a href="/certificados" className="certificados-btn">
               <FaStar style={{ marginRight: "8px", color: "#FFD700" }} />{" "}
               Certificados
-            </a>
+            </a> */}
           </div>
           <div className="text-block">
             <h2>Ganá con nuestra experiencia</h2>

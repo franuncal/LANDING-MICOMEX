@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .banner-text h1 {
     font-size: 2rem;
   }
@@ -118,5 +118,34 @@
   .cta-button {
     font-size: 1rem;
     padding: 0.6rem 1.5rem;
+  }
+} */
+
+@media (max-width: 480px) {
+  .banner-text {
+    text-align: center; /* Centra el texto */
+  }
+
+  .cta-container {
+    display: flex;
+    justify-content: center; /* Centra el botón */
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  /* Títulos más pequeños y centrados */
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1.1rem;
   }
 }

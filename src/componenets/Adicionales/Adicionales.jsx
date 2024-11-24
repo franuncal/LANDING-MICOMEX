@@ -1,36 +1,59 @@
 import "./Adicionales.css";
-
-import img from "../../assets/adicionales/adu.png";
-import img1 from "../../assets/adicionales/cont.png";
-import img2 from "../../assets/adicionales/courries.png";
-import img3 from "../../assets/adicionales/depo1.png";
-import img4 from "../../assets/adicionales/depo2.png";
-import img5 from "../../assets/adicionales/legal.png";
+import {
+  FaBalanceScale,
+  FaTruck,
+  FaWarehouse,
+  FaFileContract,
+} from "react-icons/fa";
+import { MdAccountBalance } from "react-icons/md";
+import { BsFillBriefcaseFill } from "react-icons/bs";
 
 const Adicionales = () => {
   const servicios = [
-    { titulo: "Asesoría Contable", imagen: img1 },
-    { titulo: "Asesoría Legal", imagen: img5 },
-    { titulo: "Despacho Aduanero", imagen: img },
-    { titulo: "Depósitos Nacionales", imagen: img3 },
     {
-      titulo: "Depósito Fiscal en Mercedes",
-      imagen: img4,
+      titulo: "Asesoría Contable",
+      descripcion: "Servicios contables integrales para tu empresa.",
+      icono: <MdAccountBalance />,
     },
-    { titulo: "Servicio de Courrier", imagen: img2 },
+    {
+      titulo: "Asesoría Legal",
+      descripcion: "Asistencia legal personalizada.",
+      icono: <FaBalanceScale />,
+    },
+    {
+      titulo: "Despacho Aduanero",
+      descripcion: "Gestionamos todo tipo de trámites de aduana.",
+      icono: <FaTruck />,
+    },
+    {
+      titulo: "Depósitos Nacionales",
+      descripcion: "Almacenes seguros para tus productos.",
+      icono: <FaWarehouse />,
+    },
+    {
+      titulo: "Depósito Fiscal",
+      descripcion: "Ubicación estratégica en Mercedes.",
+      icono: <BsFillBriefcaseFill />,
+    },
+    {
+      titulo: "Servicio de Courrier",
+      descripcion: "Envíos rápidos y eficientes.",
+      icono: <FaFileContract />,
+    },
   ];
 
   return (
     <section className="adicionales">
       <div className="container">
-        <h2>Además Ofrecemos:</h2>
-        <div className="grid">
+        <h2>Otros Servicios</h2>
+        <div className="servicios-grid">
           {servicios.map((servicio, index) => (
-            <div key={index}>
-              <div className="card">
-                <img src={servicio.imagen} alt={servicio.titulo} />
+            <div key={index} className="servicio">
+              <div className="icon">{servicio.icono}</div>
+              <div className="info">
+                <h3>{servicio.titulo}</h3>
+                <p>{servicio.descripcion}</p>
               </div>
-              <h3 className="card-title">{servicio.titulo}</h3>
             </div>
           ))}
         </div>
