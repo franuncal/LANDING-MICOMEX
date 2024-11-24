@@ -1,15 +1,15 @@
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./componenets/Navbar/Navbar";
-import Banner from "./componenets/Banner/Banner";
-import Nosotros from "./componenets/Nosotros/Nosotros";
-import SolucionTransporte from "./componenets/Transporte/SolucionTransporte";
-import TransporteEspecial from "./componenets/TranporteEspecial/TransporteEspecial";
-import QueOfrecemos from "./componenets/Servicios/QueOfrecemos";
-import Adicionales from "./componenets/Adicionales/Adicionales";
-import EmpresasQueConfian from "./componenets/EmpresasQueConfian/EmpresasQueConfian";
-import Ventajas from "./componenets/Ventajas/Ventajas";
-import Contact from "./componenets/Contacto/Contact";
-import Footer from "./componenets/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
+import Nosotros from "./components/Nosotros/Nosotros";
+import SolucionTransporte from "./components/Transporte/SolucionTransporte";
+import TransporteEspecial from "./components/TranporteEspecial/TransporteEspecial";
+import QueOfrecemos from "./components/Servicios/QueOfrecemos";
+import Adicionales from "./components/Adicionales/Adicionales";
+import EmpresasQueConfian from "./components/EmpresasQueConfian/EmpresasQueConfian";
+import Ventajas from "./components/Ventajas/Ventajas";
+import Contact from "./components/Contacto/Contact";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
 

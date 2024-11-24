@@ -4,6 +4,7 @@
   color: #110f10;
   padding: 40px 20px;
   text-align: center;
+  margin-top: 50px; /* Asegura que haya suficiente espacio entre el contenido y el footer */
 }
 
 .footer-content {
