@@ -40,16 +40,12 @@ const SolucionTransporte = () => {
               exportar mercancías.
             </p>
             <p className="p-completo">
-              Por su eficiencia y economía, el transporte marítimo es una de las
-              formas más comunes de transportar productos a nivel mundial,
-              representando más del 80% del comercio internacional. Los fletes
-              marítimos son esenciales para la importación y exportación de
-              mercancías debido a su seguridad y cobertura global. En MI
-              LOGISTICA Y COMERCIO EXTERIOR contamos con acuerdos con las
-              principales líneas maritimas para optimizar costos y tiempos de
-              transito acorde a lo que tu carga necesita. Somos especialistas en
-              el manejo de mercaderia peligrosas y cargas de proyecto. Asimismo
-              carga seca, refrigerada y sobredimensionada.
+              El transporte marítimo es crucial para el comercio internacional,
+              representando más del 80% de las importaciones y exportaciones. En
+              <strong> MI Logistica</strong> optimizamos costos y tiempos de
+              tránsito con las principales líneas marítimas. Somos expertos en
+              el manejo de cargas peligrosas, sobredimensionadas, refrigeradas y
+              secas.
             </p>
 
             <a href="#contacto" className="contact-btn">

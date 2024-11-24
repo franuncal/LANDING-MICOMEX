@@ -1,3 +1,4 @@
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./componenets/Navbar/Navbar";
 import Banner from "./componenets/Banner/Banner";
 import Nosotros from "./componenets/Nosotros/Nosotros";
@@ -8,6 +9,8 @@ import Adicionales from "./componenets/Adicionales/Adicionales";
 import EmpresasQueConfian from "./componenets/EmpresasQueConfian/EmpresasQueConfian";
 import Ventajas from "./componenets/Ventajas/Ventajas";
 import Contact from "./componenets/Contacto/Contact";
+import Footer from "./componenets/Footer/Footer";
+
 import "./App.css";
 
 function App() {
@@ -23,7 +26,7 @@ function App() {
       <Ventajas />
       <EmpresasQueConfian />
       <Contact />
-      {/* Otros componentes */}
+      <Footer />
     </div>
   );
 }

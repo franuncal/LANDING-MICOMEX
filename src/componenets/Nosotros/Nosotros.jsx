@@ -1,3 +1,4 @@
+import { FaStar } from "react-icons/fa"; // Importa el icono de estrella
 import "./Nosotros.css";
 import img from "../../assets/img/nosotros2.png";
 
@@ -16,6 +17,11 @@ const Nosotros = () => {
               optimización de procesos aduaneros, y desarrollo de estrategias de
               logística global.
             </p>
+            {/* Agregar botón de certificados */}
+            <a href="/certificados" className="certificados-btn">
+              <FaStar style={{ marginRight: "8px", color: "#FFD700" }} />{" "}
+              Certificados
+            </a>
           </div>
           <div className="text-block">
             <h2>Ganá con nuestra experiencia</h2>

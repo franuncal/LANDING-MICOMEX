@@ -39,29 +39,59 @@ const Contact = () => {
           <h2>Contáctanos</h2>
           <ul>
             <li>
-              <FaWhatsapp style={{ color: "#b24c11", marginRight: "10px" }} />{" "}
-              +54 9 11 1234-5678
+              <a
+                href="https://wa.me/+5492324510663?text=%C2%A1Hola!%20Estoy%20interesado%20en%20los%20servicios%20de%20MI%20LOGISTICA.%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%3A%0A-%20Flete%20A%C3%A9reo%0A-%20Flete%20Terrestre%0A-%20Flete%20Mar%C3%ADtimo%0A-%20Carga%20Peligrosa%0A-%20Carga%20Sobredimensionada%0A-%20Asesor%C3%ADa%20en%20Log%C3%ADstica%0A%0AQuisiera%20saber%20m%C3%A1s%20detalles%20sobre%20c%C3%B3mo%20podemos%20coordinar%20el%20env%C3%ADo%20de%20mi%20mercanc%C3%ADa.%20Gracias."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp style={{ color: "#b24c11", marginRight: "10px" }} />
+                +54 9 2324 510663
+              </a>
             </li>
             <li>
-              <FaPhoneAlt style={{ color: "#b24c11", marginRight: "10px" }} />{" "}
-              +54 11 2345-6789
+              <a
+                href="tel:+5492324510663"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaPhoneAlt style={{ color: "#b24c11", marginRight: "10px" }} />
+                +54 9 2324 510663
+              </a>
             </li>
             <li>
-              <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />{" "}
-              contacto@milogistica.com
+              <a
+                href="mailto:contacto@milogistica.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />
+                contacto@milogistica.com
+              </a>
             </li>
             <li>
-              <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />{" "}
-              mariazenga.comercioexterior@gmail.com
+              <a
+                href="mailto:mariazenga.comercioexterior@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />
+                mariazenga.comercioexterior@gmail.com
+              </a>
             </li>
             <li>
-              <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />{" "}
-              bautistapiriz.comercioexterior@gmail.com
+              <a
+                href="mailto:bautistapiriz.comercioexterior@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />
+                bautistapiriz.comercioexterior@gmail.com
+              </a>
             </li>
             <li>
               <FaMapMarkerAlt
                 style={{ color: "#b24c11", marginRight: "10px" }}
-              />{" "}
+              />
               Mercedes. Buenos Aires, Argentina
             </li>
           </ul>

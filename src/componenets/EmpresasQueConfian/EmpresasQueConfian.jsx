@@ -8,7 +8,7 @@ import img5 from "../../assets/logos/geva.png";
 import img6 from "../../assets/logos/bosque2.svg";
 import img7 from "../../assets/logos/restinga.png";
 import img8 from "../../assets/logos/argenL.png";
-import img9 from "../../assets/logos/bsf.png";
+import img9 from "../../assets/logos/bsf1.png";
 import img10 from "../../assets/logos/bucki.webp";
 
 const EmpresasQueConfian = () => {

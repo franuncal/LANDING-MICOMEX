@@ -8,7 +8,7 @@
   color: #fff;
   text-align: center;
   font-size: 2.5rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .brand-grid {
@@ -16,6 +16,7 @@
   grid-template-columns: repeat(4, 1fr); /* 4 logos por fila */
   gap: 3rem;
   justify-items: center;
+  margin-top: 5rem;
 }
 
 .brand-item img {

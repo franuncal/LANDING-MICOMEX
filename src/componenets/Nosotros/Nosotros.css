@@ -39,6 +39,27 @@
   text-align: justify;
   margin-bottom: 2rem;
 }
+.certificados-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #b24c11;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.certificados-btn:hover {
+  background-color: #9c430f;
+}
+
+.certificados-btn svg {
+  margin-right: 8px;
+}
 
 .nosotros-img {
   margin-top: 20px;

@@ -9,14 +9,13 @@ const TransporteEspecial = () => {
         <h2>Transporte Especializado de Proyectos y Cargas Peligrosas</h2>
         <p>
           En <strong>M.I Logística</strong> somos expertos en el manejo de carga
-          peligrosa, conociendo y cumpliendo con estrictos estándares de
-          seguridad y las normativas internacionales vigentes. Te acompañamos en
-          el proceso del tramitado de los certificados y envases autorizados
-          para el movimiento de las mercaderías, evitando costos innecesarios y
-          guardando siempre la seguridad de las personas y el medio ambiente.
-          Contamos con experiencia en el manejo de cargas sobredimencionadas que
-          requieren vehiculos, contenedores y embalaje especializado, asegurando
-          el transporte seguro y eficiente.
+          peligrosa, cumpliendo con los más altos estándares de seguridad y
+          normativas internacionales. Te guiamos en el tramitado de certificados
+          y envases autorizados, evitando costos innecesarios y asegurando la
+          seguridad de las personas y el medio ambiente. Además, contamos con
+          experiencia en el transporte de cargas sobredimensionadas, utilizando
+          vehículos, contenedores y embalajes especializados para garantizar un
+          traslado seguro y eficiente.
         </p>
       </div>
       <div className="img">
