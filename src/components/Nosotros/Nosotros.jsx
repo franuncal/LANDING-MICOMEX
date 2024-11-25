@@ -1,7 +1,7 @@
 // import { FaStar } from "react-icons/fa";
 
 import "./Nosotros.css";
-import img from "../../assets/img/nosotros2.png";
+import img from "../../assets/img/nosotros2.webp";
 
 const Nosotros = () => {
   return (

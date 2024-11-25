@@ -1,6 +1,6 @@
 import "./TransporteEspecial.css";
-import img from "../../assets/transporte/5.png";
-import img1 from "../../assets/transporte/6.png";
+import img from "../../assets/transporte/5.webp";
+import img1 from "../../assets/transporte/6.webp";
 
 const TransporteEspecial = () => {
   return (

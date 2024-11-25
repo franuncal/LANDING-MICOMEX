@@ -1,7 +1,7 @@
 import "./SolucionTransporte.css";
-import imgT1 from "../../assets/transporte/terrestre.png";
-import imgT2 from "../../assets/transporte/maritimo.png";
-import imgT3 from "../../assets/transporte/aereo.png";
+import imgT1 from "../../assets/transporte/terrestre.webp";
+import imgT2 from "../../assets/transporte/maritimo.webp";
+import imgT3 from "../../assets/transporte/aereo.webp";
 
 const SolucionTransporte = () => {
   return (

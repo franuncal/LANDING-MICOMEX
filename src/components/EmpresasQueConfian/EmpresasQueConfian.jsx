@@ -1,14 +1,14 @@
 import "./EmpresasQueConfian.css";
-import img from "../../assets/logos/denver.png";
-import img1 from "../../assets/logos/lumi.svg";
-import img2 from "../../assets/logos/remolac.png";
-import img3 from "../../assets/logos/parme.jpg";
-import img4 from "../../assets/logos/wd1.png";
-import img5 from "../../assets/logos/geva.png";
-import img6 from "../../assets/logos/bosque2.svg";
-import img7 from "../../assets/logos/restinga.png";
-import img8 from "../../assets/logos/argenL.png";
-import img9 from "../../assets/logos/bsf1.png";
+import img from "../../assets/logos/denver.webp";
+import img1 from "../../assets/logos/lumi.webp";
+import img2 from "../../assets/logos/remolac.webp";
+import img3 from "../../assets/logos/parme.webp";
+import img4 from "../../assets/logos/wd1.webp";
+import img5 from "../../assets/logos/geva.webp";
+import img6 from "../../assets/logos/bosque2.webp";
+import img7 from "../../assets/logos/restinga.webp";
+import img8 from "../../assets/logos/argenL.webp";
+import img9 from "../../assets/logos/bsf1.webp";
 import img10 from "../../assets/logos/bucki.webp";
 
 const EmpresasQueConfian = () => {

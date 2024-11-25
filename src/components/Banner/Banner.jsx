@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Banner.css";
 import videoSrc from "../../assets/videos/videoBanner.mp4";
-import img1 from "../../assets/img-empresa/img4.jpeg";
-import img2 from "../../assets/img-empresa/img5.jpeg";
+import img1 from "../../assets/img-empresa/img4.webp";
+import img2 from "../../assets/img-empresa/img5.webp";
 
 const Banner = () => {
   const [currentIndex, setCurrentIndex] = useState(1); // Comenzamos con las imágenes
