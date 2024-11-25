@@ -4,20 +4,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  height: 95vh;
   overflow: hidden;
+  padding: 5rem 1rem;
+  box-sizing: border-box;
 }
 
-/* Video de fondo */
-.video-background {
+/* Contenedor del carrusel */
+.carousel {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1; /* Asegura que las imágenes/video estén detrás del contenido */
+  overflow: hidden;
+}
+
+.carousel-image,
+.video-background {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  z-index: -1;
-  pointer-events: none;
 }
 
 /* Contenedor del contenido (texto y botón) */
@@ -25,8 +33,8 @@
   position: relative;
   z-index: 2;
   text-align: start;
-  padding: 1rem;
-  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Estilo de los títulos */
@@ -79,56 +87,50 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
-  z-index: 1; /* Coloca el filtro encima del video pero debajo del texto */
+  z-index: 1;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
+  .banner {
+    min-height: 70vh;
+    padding: 4rem 1rem;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
   .banner-text h1 {
     font-size: 2.5rem;
+    margin-top: 1rem;
   }
 
   .banner-text h2 {
     font-size: 1.8rem;
+    margin: 1rem 0;
   }
 
   .banner-text h3 {
     font-size: 1.3rem;
-  }
-
-  .cta-button {
-    font-size: 1rem;
-    padding: 0.6rem 1.5rem;
-  }
-}
-
-/* @media (max-width: 480px) {
-  .banner-text h1 {
-    font-size: 2rem;
-  }
-
-  .banner-text h2 {
-    font-size: 1.4rem;
-  }
-
-  .banner-text h3 {
-    font-size: 1.1rem;
-  }
-
-  .cta-button {
-    font-size: 1rem;
-    padding: 0.6rem 1.5rem;
-  }
-} */
-
-@media (max-width: 480px) {
-  .banner-text {
-    text-align: center; /* Centra el texto */
+    margin-bottom: 1.5rem;
   }
 
   .cta-container {
     display: flex;
-    justify-content: center; /* Centra el botón */
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .cta-container {
+    display: flex;
+    justify-content: center;
   }
 
   .cta-button {
@@ -136,16 +138,18 @@
     padding: 0.6rem 1.5rem;
   }
 
-  /* Títulos más pequeños y centrados */
   .banner-text h1 {
     font-size: 2rem;
+    margin-top: 1.5rem;
   }
 
   .banner-text h2 {
     font-size: 1.4rem;
+    margin: 1rem 0;
   }
 
   .banner-text h3 {
     font-size: 1.1rem;
+    margin-bottom: 1rem;
   }
 }
