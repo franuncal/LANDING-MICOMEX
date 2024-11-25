@@ -33,7 +33,7 @@ const Navbar = () => {
         <ul className="nav-list">
           <li>
             <a href="#nosotros" onClick={() => setMenuOpen(false)}>
-              Quiénes somos
+              Nosotros
             </a>
           </li>
           <li>

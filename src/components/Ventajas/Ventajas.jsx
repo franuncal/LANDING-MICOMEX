@@ -13,7 +13,7 @@ const Ventajas = () => {
       <div className="ventajas-card">
         <div className="card-v">
           <div className="card-content-ventajas">
-            <h3>Ventajas</h3>
+            <h3>Ventajas de Nuestra Experiencia</h3>
             <p className="ventaja-description">
               Con más de 30 años de experiencia, ofrecemos seguridad, alcance
               global, disponibilidad 24/7, puntualidad y total visibilidad en

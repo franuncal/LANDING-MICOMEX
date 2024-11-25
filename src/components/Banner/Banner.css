@@ -97,6 +97,10 @@
     padding: 4rem 1rem;
   }
 
+  .video-background {
+    display: none; /* Ocultar el video */
+  }
+
   .banner-text {
     text-align: center;
   }
@@ -126,6 +130,10 @@
   .banner-text {
     padding: 3rem 1rem;
     text-align: center;
+  }
+
+  .video-background {
+    display: none; /* Ocultar el video */
   }
 
   .cta-container {

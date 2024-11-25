@@ -28,7 +28,7 @@ const EmpresasQueConfian = () => {
 
   return (
     <section className="brand-section">
-      <h2 className="brand-title">Empresas que nos eligen</h2>
+      <h2 className="brand-title">Empresas Que Nos Eligen</h2>
       <div className="brand-grid">
         {logos.map((logo, index) => (
           <div className="brand-item" key={index}>

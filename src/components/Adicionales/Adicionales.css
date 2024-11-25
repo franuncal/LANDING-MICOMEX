@@ -122,7 +122,8 @@
 /* Responsivo: 3 columnas en pantallas grandes */
 @media (max-width: 1024px) {
   .servicios-grid {
-    grid-template-columns: repeat(3, 1fr); /* 2 columnas en tablets */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    gap: 20px;
   }
 }
 

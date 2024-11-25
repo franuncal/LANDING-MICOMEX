@@ -33,10 +33,10 @@ const Contact = () => {
 
   return (
     <section className="contact-section" id="contacto">
-      <h2 className="contact-title"></h2>
+      <h2 className="contact-title">Contáctanos</h2>
       <div className="contact-container">
         <div className="contact-info">
-          <h2>Contáctanos</h2>
+          {/* <h2>Contáctanos</h2> */}
           <ul>
             <li>
               <a
