@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import "./Contact.css";
 import {
@@ -17,6 +18,9 @@ const Contact = () => {
     message: "",
   });
 
+  // Inicializar EmailJS con tu Public Key
+  emailjs.init("-F5bPMUsEGYQ7EgF9"); // Coloca aquí tu clave pública
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -27,8 +31,43 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para manejar el envío del formulario (ej., validación o enviar los datos)
-    console.log(formData); // Solo como ejemplo, imprimiendo los datos en consola
+
+    // Definir los parámetros del template
+    const templateParams = {
+      to_name: "M.I Logística y Comercio Internacional", // Nombre de la empresa de tu cliente
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      company: formData.company,
+      service: formData.service,
+      message: formData.message,
+    };
+
+    // Enviar el formulario a través de EmailJS
+    emailjs
+      .send(
+        "service_7pr6bla", // Usamos 'default_service' como service ID (lo puedes verificar en EmailJS)
+        "template_e5zo8cb", // Tu Template ID de EmailJS
+        templateParams
+      )
+      .then(
+        (result) => {
+          console.log(result.text); // Si todo sale bien, loguea el resultado
+          alert("¡Mensaje enviado correctamente!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            service: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error(error.text); // Si ocurre un error, loguea el error
+          alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+        }
+      );
   };
 
   return (
@@ -36,7 +75,7 @@ const Contact = () => {
       <h2 className="contact-title">Contáctanos</h2>
       <div className="contact-container">
         <div className="contact-info">
-          {/* <h2>Contáctanos</h2> */}
+          {/* Información de contacto */}
           <ul>
             <li>
               <a
