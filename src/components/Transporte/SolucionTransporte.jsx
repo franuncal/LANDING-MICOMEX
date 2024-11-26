@@ -6,16 +6,16 @@ import imgT3 from "../../assets/transporte/aereo.webp";
 
 // Modal
 // IMG STAND
-import img1 from "../../assets/transporte/1ST1.png";
-import img2 from "../../assets/transporte/2ST2.png";
+import img1 from "../../assets/transporte/1ST1.webp";
+import img2 from "../../assets/transporte/2ST2.webp";
 // IMG Flat
 import img3 from "../../assets/transporte/1FL1.webp";
 import img4 from "../../assets/transporte/2FL2.webp";
 // IMG OT
 import img5 from "../../assets/transporte/OT.webp";
-import img6 from "../../assets/transporte/OT1.png";
+import img6 from "../../assets/transporte/OT1.webp";
 // IMG REEFER
-import img7 from "../../assets/transporte/reffer.png";
+import img7 from "../../assets/transporte/reffer.webp";
 
 const SolucionTransporte = () => {
   const [isMaritimoOpen, setIsMaritimoOpen] = useState(false);

@@ -10,7 +10,7 @@ import img8 from "../../assets/logos/argenL.webp";
 import img9 from "../../assets/logos/bsf1.webp";
 import img10 from "../../assets/logos/bucki.webp";
 import img11 from "../../assets/logos/merle.webp";
-import img12 from "../../assets/logos/biagro.png";
+import img12 from "../../assets/logos/biagro.webp";
 
 const EmpresasQueConfian = () => {
   const logos = [
