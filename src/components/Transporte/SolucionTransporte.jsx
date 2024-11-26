@@ -7,14 +7,15 @@ import imgT3 from "../../assets/transporte/aereo.webp";
 // Modal
 // IMG STAND
 import img1 from "../../assets/transporte/1ST1.png";
-import img4 from "../../assets/transporte/2ST2.png";
+import img2 from "../../assets/transporte/2ST2.png";
 // IMG Flat
-import img2 from "../../assets/transporte/1FL1.webp";
-import img5 from "../../assets/transporte/2FL2.webp";
+import img3 from "../../assets/transporte/1FL1.webp";
+import img4 from "../../assets/transporte/2FL2.webp";
 // IMG OT
-import img6 from "../../assets/transporte/3.png";
+import img5 from "../../assets/transporte/OT.webp";
+import img6 from "../../assets/transporte/OT1.png";
 // IMG REEFER
-import img3 from "../../assets/transporte/reffer.png";
+import img7 from "../../assets/transporte/reffer.png";
 
 const SolucionTransporte = () => {
   const [isMaritimoOpen, setIsMaritimoOpen] = useState(false);
@@ -37,7 +38,7 @@ const SolucionTransporte = () => {
     },
     {
       titulo: "Standard 40 DC",
-      imagen: img4,
+      imagen: img2,
       medidas: "Longitud: 12,032 - Ancho: 2,352 - Altura: 2,395",
       apertura: "N/A",
       peso: "Max Bruto: 32,500 - Tara: 3,750 - Cap. Max: 28,750",
@@ -45,7 +46,7 @@ const SolucionTransporte = () => {
     },
     {
       titulo: "Standard 40 HC",
-      imagen: img4,
+      imagen: img2,
       medidas: "Longitud: 12,032 - Ancho: 2,350 - Altura: 2,700",
       apertura: "N/A",
       peso: "Max. Bruto: 32,500 - Tara: 3,900 - Cap. Max: 28,600",
@@ -55,7 +56,7 @@ const SolucionTransporte = () => {
     // Cont. Flat
     {
       titulo: "Flatrack 20 FR ",
-      imagen: img2,
+      imagen: img3,
       medidas:
         "Longitud Min.: 5,638 - Ancho Piso: 2,438 - Ancho Min.: 2,194 - Altura: 2,233 - Altura Fondo: 370",
       apertura: "N/A",
@@ -64,7 +65,7 @@ const SolucionTransporte = () => {
     },
     {
       titulo: "Flatrack 40 FR / Platform 40 ",
-      imagen: img5,
+      imagen: img4,
       medidas:
         "Longitud Min.: 11,652 - Ancho Piso: 2,347 - Ancho Min.: 2,245 - Altura: 2,265 - Altura Fondo: 648",
       apertura: "N/A",
@@ -75,7 +76,7 @@ const SolucionTransporte = () => {
     // Cont. OT
     {
       titulo: "Open Tops 20",
-      imagen: img6,
+      imagen: img5,
       medidas: "Longitud: 5,895 - Ancho: 2,350 - Altura: 2,340",
       apertura: "Ancho: 2,23 - Longitud: 5,338",
       peso: "Max Bruto: 32,500 - Tara: 2,450 - Cap. Max: 30,050",
@@ -93,7 +94,7 @@ const SolucionTransporte = () => {
     // Cont. Reefer
     {
       titulo: "Reefer 20 RF",
-      imagen: img3,
+      imagen: img7,
       medidas: "Longitud: 5,450 - Ancho: 2,280 - Altura: 2,159",
       apertura: "N/A",
       peso: "Max. Bruto: 32,000 - Tara: 2,860 - Cap. Max: 29,140",
@@ -101,7 +102,7 @@ const SolucionTransporte = () => {
     },
     {
       titulo: "Reefer 40 RF",
-      imagen: img3,
+      imagen: img7,
       medidas: "Longitud: 11,599 - Ancho: 2,290 - Altura: 2,425",
       apertura: "N/A",
       peso: "Max. Bruto: 34,000 - Tara: 4,420 - Cap. Max: 29,580",
