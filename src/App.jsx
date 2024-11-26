@@ -18,10 +18,30 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duración de la animación
-      once: true, // Para que la animación solo se ejecute una vez
-    });
+    const initializeAOS = () => {
+      if (window.innerWidth > 768) {
+        // Solo activa AOS en escritorio
+        AOS.init({
+          duration: 1000, // Duración de la animación
+          once: true, // Para que la animación solo se ejecute una vez
+        });
+      } else {
+        // Desactiva AOS en dispositivos móviles
+        AOS.init({ disable: true });
+        AOS.refreshHard(); // Asegura la limpieza de los efectos
+      }
+    };
+
+    // Ejecuta la inicialización al cargar
+    initializeAOS();
+
+    // Vuelve a inicializar si cambia el tamaño de la ventana
+    window.addEventListener("resize", initializeAOS);
+
+    // Limpia el evento al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", initializeAOS);
+    };
   }, []);
 
   return (
