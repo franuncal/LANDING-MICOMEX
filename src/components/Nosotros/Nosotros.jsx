@@ -1,5 +1,3 @@
-// import { FaStar } from "react-icons/fa";
-
 import "./Nosotros.css";
 import img from "../../assets/img/nosotros2.webp";
 
@@ -20,7 +18,7 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="text-block" data-aos="fade-up" data-aos-delay="200">
-            <h2>Ganá Con Nuestra Experiencia</h2>
+            <h2>Gana Con Nuestra Experiencia</h2>
             <p>
               Como equipo de trabajo aprovechamos nuestras sinergias recurriendo
               a un conocimiento profundo de los mercados locales y una vasta

@@ -1,7 +1,7 @@
 /* Estilos generales de la sección de transporte */
 .solucion-transporte {
   max-width: 1200px;
-  margin: 0 auto; /* Centra el contenedor */
+  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -22,31 +22,31 @@
 .transporte-cards h2::after {
   content: "";
   display: block;
-  width: 80px; /* El ancho de la línea */
-  height: 4px; /* El grosor de la línea */
-  background: #040c64; /* Color de la línea */
-  margin: 15px auto 10px; /* Margen para centrarla */
-  border-radius: 2px; /* Bordes redondeados */
+  width: 80px;
+  height: 4px;
+  background: #040c64;
+  margin: 15px auto 10px;
+  border-radius: 2px;
 }
 
 /* Estilos de las tarjetas */
 .card {
   position: relative;
   width: 100%;
-  height: 550px; /* Aumentamos un poco la altura de la tarjeta */
+  height: 550px;
   padding: 1rem;
   border-radius: 8px;
   overflow: hidden;
   color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all 0.3s ease; /* Transición suave para expansión */
+  transition: all 0.3s ease;
 }
 
 .card.expanded {
-  height: 650px; /* Expande la tarjeta cuando se despliega la información */
+  height: 650px;
 }
 
 .card::before {
@@ -64,14 +64,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0; /* Coloca la imagen detrás del pseudo-elemento */
+  z-index: 0;
 }
 
 .card-content {
   position: relative;
   height: 100%;
-  z-index: 2; /* Asegura que el texto esté por encima de la capa opaca */
-  color: #fff; /* Texto blanco para contrastar */
+  z-index: 2;
+  color: #fff;
   padding: 1rem;
 }
 
@@ -83,8 +83,7 @@
 
 .card p {
   font-size: 1.2rem;
-  margin: 0.5rem 0 0;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1rem;
 }
 
 /* Estilos del botón de contacto */
@@ -93,15 +92,15 @@
   bottom: 10px;
   left: 10px;
   padding: 10px 20px;
-  background-color: #b24c11; /* Color de fondo */
-  color: #fff; /* Color del texto */
+  background-color: #b24c11;
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
 }
 
 .contact-btn:hover {
-  background-color: #fff; /* Color al pasar el cursor */
+  background-color: #fff;
 }
 
 /* Estilos para el modal */
@@ -111,42 +110,89 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  display: none; /* Por defecto está oculto */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .modal.active {
-  display: flex; /* Muestra el modal cuando tiene la clase 'active' */
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal-content {
   background-color: #fff;
   padding: 2rem;
   border-radius: 8px;
-  max-width: 500px;
-  width: 100%;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal-content h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.modal-content ul {
-  list-style-type: none;
-  padding: 0;
+/* Estilos para la imagen centrada en el modal */
+.modal-content img {
+  max-width: 380px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Lista de contenedores organizada horizontalmente */
+.container-list {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  justify-content: center;
+  position: relative;
+}
+
+.container-item {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-info {
+  padding-top: 10px;
 }
 
 .modal-content li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  flex-shrink: 0;
+  justify-content: center;
 }
 
-.close-btn {
+/* Botón para abrir el modal */
+.expand-btn {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #b24c11;
@@ -155,146 +201,77 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-}
-
-.close-btn:hover {
-  background-color: #8a3707;
-}
-
-/* Botones expandibles */
-.expand-btn {
-  padding: 8px 15px;
-  margin-top: 10px;
-  background-color: #ff8000;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .expand-btn:hover {
-  background-color: #ff6600;
+  background-color: #8a3707;
 }
 
-.expand-btn:focus {
-  outline: none;
-}
-
-/* Efectos para las tarjetas */
-.card:hover {
-  transform: scale(1.05); /* Hace un pequeño zoom al pasar el cursor */
-}
-
-.card-content p {
-  height: 100px; /* Asegura que el texto no se desborde */
-  overflow: hidden;
-}
-
-.card-content p.p-completo {
+/* Botón de cerrar */
+.close-btn-card {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b24c11;
+  color: white;
+  border: none;
+  border-radius: 5px;
   font-size: 1rem;
-  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Media Queries */
-
-/* Para pantallas pequeñas (tablets) - 768px */
-@media screen and (max-width: 768px) {
-  /* Ajustes en el contenedor principal */
-  .solucion-transporte {
-    padding: 1rem;
-  }
-
-  .transporte-cards h2 {
-    font-size: 1.8rem; /* Reducimos el tamaño del título */
-  }
-
-  .card {
-    height: 400px; /* Reducimos la altura de las tarjetas */
-  }
-
-  .card-content {
-    padding: 1rem;
-  }
-
-  .card h3 {
-    font-size: 1.8rem; /* Reducimos el tamaño del título dentro de la tarjeta */
-  }
-
-  .card p {
-    font-size: 1rem; /* Reducimos el tamaño del texto */
-  }
-
-  /* Botón de contacto */
-  .contact-btn {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-
-  /* Botones expandibles */
-  .expand-btn {
-    font-size: 0.9rem;
-    padding: 7px 12px;
-  }
-
-  /* Modal */
-  .modal-content {
-    padding: 1.5rem;
-    max-width: 90%; /* Aumentamos el ancho del modal en pantallas más pequeñas */
-  }
+.close-btn-card:hover {
+  background-color: #8a3707;
 }
 
-/* Para pantallas aún más pequeñas (móviles) - 480px */
-@media screen and (max-width: 480px) {
-  /* Ajustes en el contenedor principal */
-  .solucion-transporte {
-    padding: 1rem;
-  }
+/* Botones de navegación a los costados */
+.carousel-btn-prev,
+.carousel-btn-next {
+  position: absolute;
+  top: 50%;
+  background-color: #b24c11;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  transform: translateY(-50%);
+}
 
-  .transporte-cards h2 {
-    font-size: 1.5rem; /* Reducimos aún más el tamaño del título */
-  }
+.carousel-btn-prev {
+  left: 10px; /* Botón a la izquierda */
+}
 
-  .card {
-    height: 350px; /* Ajustamos las tarjetas para que sean más pequeñas */
-  }
+.carousel-btn-next {
+  right: 10px; /* Botón a la derecha */
+}
 
-  .card-content {
-    padding: 0.8rem;
-  }
+.carousel-btn-prev:hover,
+.carousel-btn-next:hover {
+  background-color: #8a3707;
+}
 
-  .card h3 {
-    font-size: 1.6rem; /* Título de la tarjeta más pequeño */
-  }
+/* Contenedor para los botones de navegación */
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0;
+}
 
-  .card p {
-    font-size: 0.9rem; /* Reducimos aún más el tamaño del texto */
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  /* Botón de contacto */
-  .contact-btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-  }
-
-  /* Botones expandibles */
-  .expand-btn {
-    font-size: 0.8rem;
-    padding: 6px 10px;
-  }
-
-  /* Modal */
-  .modal-content {
-    padding: 1.2rem;
-    max-width: 90%;
-  }
-
-  /* Ajustamos la visualización de las tarjetas en pantalla pequeña */
-  .transporte-cards {
-    gap: 0.8rem;
-  }
-
-  .card {
-    width: 100%; /* Hacemos que las tarjetas ocupen el 100% del ancho */
+  to {
+    opacity: 1;
   }
 }
