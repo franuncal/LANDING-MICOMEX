@@ -19,7 +19,7 @@ const Contact = () => {
   });
 
   // Inicializar EmailJS con tu Public Key
-  emailjs.init("-F5bPMUsEGYQ7EgF9"); // Coloca aquí tu clave pública
+  emailjs.init("-F5bPMUsEGYQ7EgF9");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
