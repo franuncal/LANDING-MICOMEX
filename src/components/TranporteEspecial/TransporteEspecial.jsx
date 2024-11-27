@@ -8,8 +8,10 @@ const TransporteEspecial = () => {
   return (
     <section className="especialidades" id="especialidades">
       <div className="title">
-        <h2>Transporte Especializado de Cargas de Proyectos y Peligrosas</h2>
-        <p>
+        <h2 data-aos="fade-right" data-aos-delay="180">
+          Transporte Especializado de Cargas de Proyectos y Peligrosas
+        </h2>
+        <p data-aos="fade-left" data-aos-delay="180">
           En <strong>M.I Logística</strong> somos expertos en el manejo de carga
           peligrosa, cumpliendo con los más altos estándares de seguridad y
           normativas internacionales. Te guiamos en el tramitado de certificados

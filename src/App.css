@@ -1,9 +1,11 @@
 /* Estilo global */
 body {
   font-family: "Noto Sans", sans-serif;
+  /* background-color: #f9f9f9; */
+  background-color: rgba(235, 235, 235);
   margin: 0;
   padding: 0;
-  background-color: rgba(245, 241, 240);
+  /* background-color: rgba(245, 241, 240); */
   color: #333;
   line-height: 1.6;
 }

@@ -1,6 +1,6 @@
 .adicionales {
   padding: 80px 20px;
-  background: #f9fafe;
+  /* background: #f9fafe; */
   text-align: center;
   position: relative;
 }
@@ -83,7 +83,7 @@
   line-height: 1.5;
 }
 
-.adicionales::before {
+/* .adicionales::before {
   content: "";
   position: absolute;
   top: 10%;
@@ -107,9 +107,9 @@
   border-radius: 50%;
   z-index: -1;
   animation: float 8s ease-in-out infinite reverse;
-}
+} */
 
-@keyframes float {
+/* @keyframes float {
   0%,
   100% {
     transform: translateY(0);
@@ -117,7 +117,7 @@
   50% {
     transform: translateY(-20px);
   }
-}
+} */
 
 /* Responsivo: 3 columnas en pantallas grandes */
 @media (max-width: 1024px) {

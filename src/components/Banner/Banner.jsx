@@ -28,7 +28,7 @@ const Banner = () => {
         () => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % (images.length + 1)); // Se debe sumar 1 por el video
         },
-        currentIndex === 0 ? 14000 : 5000
+        currentIndex === 0 ? 12000 : 3000
       ); // El video tiene un tiempo mayor
 
       return () => clearInterval(interval);

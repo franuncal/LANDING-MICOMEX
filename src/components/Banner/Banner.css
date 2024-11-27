@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 90vh;
   overflow: hidden;
   padding: 5rem 1rem;
   box-sizing: border-box;
@@ -33,13 +33,13 @@
   position: relative;
   z-index: 2;
   text-align: start;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 /* Estilo de los títulos */
 .banner-text h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: #fff;
   margin: 0;
 }
