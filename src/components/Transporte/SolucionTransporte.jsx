@@ -32,7 +32,7 @@ const SolucionTransporte = () => {
       titulo: "Standard 20 DC",
       imagen: img1,
       medidas: "Longitud: 5,900 - Ancho: 2,352 - Altura: 2,395",
-      apertura: "N/A",
+
       peso: "Max Bruto: 32,500 - Tara: 2,370 - Cap. Max: 30,130",
       capacidad: "33.2 cbm / 1,172 cbft",
     },
@@ -40,7 +40,7 @@ const SolucionTransporte = () => {
       titulo: "Standard 40 DC",
       imagen: img2,
       medidas: "Longitud: 12,032 - Ancho: 2,352 - Altura: 2,395",
-      apertura: "N/A",
+
       peso: "Max Bruto: 32,500 - Tara: 3,750 - Cap. Max: 28,750",
       capacidad: "67.7 cbm / 2,390 cbft",
     },
@@ -48,7 +48,7 @@ const SolucionTransporte = () => {
       titulo: "Standard 40 HC",
       imagen: img2,
       medidas: "Longitud: 12,032 - Ancho: 2,350 - Altura: 2,700",
-      apertura: "N/A",
+
       peso: "Max. Bruto: 32,500 - Tara: 3,900 - Cap. Max: 28,600",
       capacidad: "76.3 cbm / 2,694 cbft",
     },
@@ -59,7 +59,7 @@ const SolucionTransporte = () => {
       imagen: img3,
       medidas:
         "Longitud Min.: 5,638 - Ancho Piso: 2,438 - Ancho Min.: 2,194 - Altura: 2,233 - Altura Fondo: 370",
-      apertura: "N/A",
+
       peso: "Max. Bruto: 45,000 - Tara: 2,900 - Cap. Max: 42,100",
       capacidad: "N/A",
     },
@@ -68,7 +68,7 @@ const SolucionTransporte = () => {
       imagen: img4,
       medidas:
         "Longitud Min.: 11,652 - Ancho Piso: 2,347 - Ancho Min.: 2,245 - Altura: 2,265 - Altura Fondo: 648",
-      apertura: "N/A",
+
       peso: "Max. Bruto: 55,000	 - Tara: 5,900 - Cap. Max: 49,100",
       capacidad: "N/A",
     },
@@ -78,7 +78,7 @@ const SolucionTransporte = () => {
       titulo: "Open Tops 20",
       imagen: img5,
       medidas: "Longitud: 5,895 - Ancho: 2,350 - Altura: 2,340",
-      apertura: "Ancho: 2,23 - Longitud: 5,338",
+
       peso: "Max Bruto: 32,500 - Tara: 2,450 - Cap. Max: 30,050",
       capacidad: "32.5 cbm / 1,149 cbft",
     },
@@ -86,7 +86,7 @@ const SolucionTransporte = () => {
       titulo: "Open Tops 40",
       imagen: img6,
       medidas: "Longitud: 12,029 - Ancho: 2,350 - Altura: 2,380",
-      apertura: "Ancho: 2,23 - Longitud: 11,552",
+
       peso: "Max Bruto: 32,500 - Tara: 4,050 - Cap. Max: 28,450",
       capacidad: "66.8 cbm / 2,359 cbft",
     },
@@ -96,7 +96,7 @@ const SolucionTransporte = () => {
       titulo: "Reefer 20 RF",
       imagen: img7,
       medidas: "Longitud: 5,450 - Ancho: 2,280 - Altura: 2,159",
-      apertura: "N/A",
+
       peso: "Max. Bruto: 32,000 - Tara: 2,860 - Cap. Max: 29,140",
       capacidad: "28,1 cbm / 1,006 cbft",
     },
@@ -104,7 +104,7 @@ const SolucionTransporte = () => {
       titulo: "Reefer 40 RF",
       imagen: img7,
       medidas: "Longitud: 11,599 - Ancho: 2,290 - Altura: 2,425",
-      apertura: "N/A",
+
       peso: "Max. Bruto: 34,000 - Tara: 4,420 - Cap. Max: 29,580",
       capacidad: "67.7 cbm / 2,387 cbft",
     },
@@ -169,11 +169,11 @@ const SolucionTransporte = () => {
             </p>
             <p className="p-completo">
               El transporte marítimo es crucial para el comercio internacional,
-              representando más del 80% de las importaciones y exportaciones. En
+              representando más del 80% de las importaciones y exportaciones.{" "}
+              <br /> En
               <strong> M.I Logistica</strong> optimizamos costos y tiempos de
-              tránsito con las principales líneas marítimas. Somos expertos en
-              el manejo de cargas peligrosas, sobredimensionadas, refrigeradas y
-              secas.
+              tránsito con las principales líneas marítimas. <br /> Somos
+              expertos en el manejo de cargas peligrosas y sobredimensionadas.
             </p>
 
             {/* Botón para abrir el modal de contenedores */}
@@ -218,10 +218,6 @@ const SolucionTransporte = () => {
                     <strong>Capacidad:</strong>{" "}
                     {contenedores[currentImageIndex].capacidad}
                   </p>
-                  <p>
-                    <strong>Apertura Superior:</strong>{" "}
-                    {contenedores[currentImageIndex].apertura}
-                  </p>
                 </div>
                 <button onClick={nextImage} className="carousel-btn-next">
                   &#8594;
@@ -251,9 +247,9 @@ const SolucionTransporte = () => {
               El transporte aéreo es seguro, permitiendo cubrir grandes
               distancias de manera rápida y eficiente ideal para cumplir con los
               plazos en la cadena de suministro. <br /> CONSOLIDADOS - CHARTERS
-              - CARGAS DE PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL.
+              - CARGAS DE PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL CARGA
+              REFRIGERADA – CARGA PELIGROSA
             </p>
-
             <a href="#contacto" className="contact-btn">
               CONTACTANOS
             </a>

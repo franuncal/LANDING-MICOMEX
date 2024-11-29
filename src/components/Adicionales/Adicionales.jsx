@@ -46,7 +46,7 @@ const Adicionales = () => {
     <section className="adicionales">
       <div className="container">
         <h2>Otros Servicios</h2>
-        <div className="servicios-grid">
+        <div className="servicios-grid-1">
           {servicios.map((servicio, index) => (
             <div key={index} className="servicio">
               <div className="icon">{servicio.icono}</div>

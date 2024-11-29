@@ -33,8 +33,8 @@
 /* Rejilla de servicios */
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem; /* Espaciado entre las tarjetas */
   justify-items: center;
   padding: 0 1rem; /* Espaciado interno para evitar bordes */
 }
@@ -44,12 +44,12 @@
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  padding: 1rem; /* Reducimos el padding */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 300px; /* Controlamos un ancho máximo para todas las tarjetas */
-  height: 250px; /* Forzamos un alto fijo */
+  max-width: 250px; /* Tamaño más pequeño */
+  height: 220px; /* Altura más pequeña */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,11 +60,10 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Icono de servicio */
 .servicio-card .icon {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Tamaño más pequeño */
   color: #b24c11;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem; /* Margen ajustado */
 }
 
 .servicio-card h3 {
@@ -84,18 +83,24 @@
   }
 
   .servicios-grid {
-    padding: 0 1rem; /* Aseguramos espacio lateral */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 3 columnas en pantallas medianas */
+    padding: 0 1rem; /* Espaciado interno */
   }
 }
 
 @media (max-width: 480px) {
   .servicios-grid {
-    grid-template-columns: repeat(1, 1fr); /* Mostramos 2 columnas en móviles */
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* 2 columnas en pantallas pequeñas */
     gap: 1rem; /* Reducimos el espacio entre tarjetas */
-    padding: 0 1rem; /* Espacio adicional para móviles */
   }
 
   .servicio-card {
-    height: 220px; /* Ajustamos el tamaño para móviles */
+    height: 180px; /* Ajustamos el tamaño para móviles */
   }
 }

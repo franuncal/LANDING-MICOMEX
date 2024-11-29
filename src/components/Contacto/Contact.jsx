@@ -197,7 +197,7 @@ const Contact = () => {
                 <option value="terrestre">Flete Terrestre</option>
                 <option value="maritimo">Flete Maritimo</option>
                 <option value="peligrosa">Carga Peligrosa</option>
-                <option value="proyecto">Carga Proyecto</option>
+                <option value="proyecto">Carga de Proyecto</option>
                 <option value="asesoria">Asesoría</option>
               </select>
 
