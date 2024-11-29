@@ -247,7 +247,7 @@ const SolucionTransporte = () => {
               El transporte aéreo es seguro, permitiendo cubrir grandes
               distancias de manera rápida y eficiente ideal para cumplir con los
               plazos en la cadena de suministro. <br /> CONSOLIDADOS - CHARTERS
-              - CARGAS DE PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL CARGA
+              - CARGAS PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL CARGA
               REFRIGERADA – CARGA PELIGROSA
             </p>
             <a href="#contacto" className="contact-btn">
