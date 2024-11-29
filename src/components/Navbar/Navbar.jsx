@@ -14,6 +14,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="logo">
         <img src={img} alt="M.I Logistica Logo" />
+        {/* <span className="logo-text">M.I Logística</span> */}
       </div>
 
       {/* Menú Hamburguesa en pantallas pequeñas */}

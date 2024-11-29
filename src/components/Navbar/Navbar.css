@@ -11,12 +11,27 @@
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 25px; 
+  white-space: nowrap; 
+} */
 
 .logo img {
   max-height: 75px;
   width: auto;
   height: auto;
 }
+
+/* .logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b24c11;
+  text-transform: uppercase;
+  white-space: nowrap;
+} */
 
 .menu-toggle {
   background: none;
