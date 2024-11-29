@@ -12,7 +12,6 @@ import EmpresasQueConfian from "./components/EmpresasQueConfian/EmpresasQueConfi
 import Ventajas from "./components/Ventajas/Ventajas";
 import Contact from "./components/Contacto/Contact";
 import Footer from "./components/Footer/Footer";
-// import { ParallaxProvider } from "react-scroll-parallax";
 
 import "./App.css";
 
