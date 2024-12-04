@@ -239,16 +239,16 @@ const SolucionTransporte = () => {
         >
           <div className="card-content">
             <h3>Fletes Aéreos</h3>
-            <p className="p-breve">
-              El transporte aéreo es rápido y seguro, ideal para cumplir con los
-              plazos de la cadena de suministro.
+            <p className="p-breve-a">
+              El transporte aéreo es seguro, permitiendo cubrir grandes
+              distancias de manera rápida.
             </p>
-            <p className="p-completo">
+            <p className="p-completo-a">
               El transporte aéreo es seguro, permitiendo cubrir grandes
               distancias de manera rápida y eficiente ideal para cumplir con los
-              plazos en la cadena de suministro. <br /> CONSOLIDADOS - CHARTERS
-              - CARGAS PROYECTO - SEA/AIR - AIR/AIR - MULTIMODAL CARGA
-              REFRIGERADA – CARGA PELIGROSA
+              plazos en la cadena de suministro. <br />
+              CONSOLIDADOS - CHARTERS - CARGAS PROYECTO - SEA/AIR - AIR/AIR -
+              MULTIMODAL CARGA REFRIGERADA – CARGA PELIGROSA
             </p>
             <a href="#contacto" className="contact-btn">
               CONTACTANOS

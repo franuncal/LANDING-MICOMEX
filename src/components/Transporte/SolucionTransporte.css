@@ -87,6 +87,10 @@
   margin: 0.5rem 0 1rem;
 }
 
+.p-breve-a {
+  display: none;
+}
+
 /* Estilo global */
 .p-completo {
   display: block; /* Visible por defecto */
@@ -317,6 +321,10 @@
     display: none;
   }
 
+  .p-breve-a {
+    display: block;
+  }
+
   .contact-btn {
     font-size: 0.8rem;
   }
@@ -351,6 +359,14 @@
 
   .p-completo {
     display: none;
+  }
+
+  .p-completo-a {
+    display: none;
+  }
+
+  .p-breve-a {
+    display: block;
   }
 
   .contact-btn {

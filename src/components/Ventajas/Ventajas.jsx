@@ -17,7 +17,7 @@ const Ventajas = () => {
             <p className="ventaja-description">
               Con más de 30 años de experiencia, ofrecemos seguridad, alcance
               global, disponibilidad 24/7, puntualidad y total visibilidad en
-              cada operación. Con nosotros, tu negocio estará en manos de
+              cada operación. <br /> Con nosotros, tu negocio estará en manos de
               expertos que garantizan eficiencia, rapidez y una ventaja
               competitiva para tu crecimiento.
             </p>
