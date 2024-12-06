@@ -34,9 +34,9 @@ const Contact = () => {
 
     // Definir los parámetros del template
     const templateParams = {
-      to_name: "M.I Logística y Comercio Internacional",
-      from_name: formData.name,
-      from_email: formData.email,
+      to_name: "M.I Logística y Comercio Internacional", // Nombre de tu cliente
+      from_name: formData.name, // Nombre de la persona + leyenda personalizada
+      from_email: formData.email, // Correo de la persona que llena el formulario
       phone: formData.phone,
       company: formData.company,
       service: formData.service,
@@ -53,7 +53,9 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text); // Si todo sale bien, loguea el resultado
-          alert("¡Mensaje enviado correctamente!");
+          alert(
+            "¡Mensaje enviado. Le responderemos a la brevedad. Muchas gracias!"
+          );
           setFormData({
             name: "",
             email: "",
