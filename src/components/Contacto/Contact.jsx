@@ -34,7 +34,7 @@ const Contact = () => {
 
     // Definir los parámetros del template
     const templateParams = {
-      to_name: "M.I Logística y Comercio Internacional", // Nombre de la empresa de tu cliente
+      to_name: "M.I Logística y Comercio Internacional",
       from_name: formData.name,
       from_email: formData.email,
       phone: formData.phone,
@@ -79,7 +79,7 @@ const Contact = () => {
           <ul>
             <li>
               <a
-                href="https://wa.me/+5492324510663?text=%C2%A1Hola!%20Estoy%20interesado%20en%20los%20servicios%20de%20MI%20LOGISTICA.%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%3A%0A-%20Flete%20A%C3%A9reo%0A-%20Flete%20Terrestre%0A-%20Flete%20Mar%C3%ADtimo%0A-%20Carga%20Peligrosa%0A-%20Carga%20Sobredimensionada%0A-%20Asesor%C3%ADa%20en%20Log%C3%ADstica%0A%0AQuisiera%20saber%20m%C3%A1s%20detalles%20sobre%20c%C3%B3mo%20podemos%20coordinar%20el%20env%C3%ADo%20de%20mi%20mercanc%C3%ADa.%20Gracias."
+                href="https://wa.me/+5492324510663?text=Hola!%20Quiero%20asesorarme%20con%20ustedes%20sobre%20los%20servicios%20de%20Comercio%20Internacional%20y%20Logística."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,12 +99,12 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="mailto:contacto@milogistica.com"
+                href="mailto:mariazenga@milogisticainternacional.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />
-                contacto@milogistica.com
+                mariazenga@milogisticainternacional.com
               </a>
             </li>
             <li>
@@ -115,6 +115,16 @@ const Contact = () => {
               >
                 <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />
                 mariazenga.comercioexterior@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:bautistapiriz@milogisticainternacional.com "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaEnvelope style={{ color: "#b24c11", marginRight: "10px" }} />
+                bautistapiriz@milogisticainternacional.com
               </a>
             </li>
             <li>
