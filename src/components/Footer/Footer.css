@@ -16,3 +16,12 @@
   font-size: 1rem;
   margin-bottom: 10px;
 }
+
+.footer-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

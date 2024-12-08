@@ -12,6 +12,8 @@ import EmpresasQueConfian from "./components/EmpresasQueConfian/EmpresasQueConfi
 import Ventajas from "./components/Ventajas/Ventajas";
 import Contact from "./components/Contacto/Contact";
 import Footer from "./components/Footer/Footer";
+import PrivacyPolicy from "./pages/PrivatePolicy"; // Componente de la página de políticas
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importa Router y Routes
 
 import "./App.css";
 
@@ -44,19 +46,31 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Navbar />
-      <Banner />
-      <Nosotros />
-      <QueOfrecemos />
-      <SolucionTransporte />
-      <TransporteEspecial />
-      <Adicionales />
-      <Ventajas />
-      <EmpresasQueConfian />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        {/* Ruta principal con todo el contenido */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Banner />
+              <Nosotros />
+              <QueOfrecemos />
+              <SolucionTransporte />
+              <TransporteEspecial />
+              <Adicionales />
+              <Ventajas />
+              <EmpresasQueConfian />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        {/* Ruta para la página de políticas de privacidad */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
   );
 }
 
