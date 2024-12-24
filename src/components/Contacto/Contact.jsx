@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Contact.css";
 import {
   FaWhatsapp,
-  FaPhoneAlt,
+  // FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
@@ -78,6 +78,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-info">
           {/* Información de contacto */}
+          <h4>DPTO. COMERCIAL - MARIA INES ZENGA</h4>
           <ul>
             <li>
               <a
@@ -89,7 +90,7 @@ const Contact = () => {
                 +54 9 2324 510663
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="tel:+5492324510663"
                 target="_blank"
@@ -98,7 +99,7 @@ const Contact = () => {
                 <FaPhoneAlt style={{ color: "#b24c11", marginRight: "10px" }} />
                 +54 9 2324 510663
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="mailto:mariazenga@milogisticainternacional.com"
@@ -119,6 +120,29 @@ const Contact = () => {
                 mariazenga.comercioexterior@gmail.com
               </a>
             </li>
+          </ul>
+          <h4>DPTO. OPERACIONES - BAUTISTA PIRIZ</h4>
+          <ul>
+            <li>
+              <a
+                href="https://wa.me/+5492324510676?text=Hola!%20Quiero%20asesorarme%20con%20ustedes%20sobre%20los%20servicios%20de%20Comercio%20Internacional%20y%20Logística."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp style={{ color: "#b24c11", marginRight: "10px" }} />
+                +54 9 2324 510676
+              </a>
+            </li>
+            {/* <li>
+              <a
+                href="tel:+5492324510663"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaPhoneAlt style={{ color: "#b24c11", marginRight: "10px" }} />
+                +54 9 2324 510663
+              </a>
+            </li> */}
             <li>
               <a
                 href="mailto:bautistapiriz@milogisticainternacional.com "
@@ -139,11 +163,12 @@ const Contact = () => {
                 bautistapiriz.comercioexterior@gmail.com
               </a>
             </li>
+            <br />
             <li>
               <FaMapMarkerAlt
                 style={{ color: "#b24c11", marginRight: "10px" }}
               />
-              Mercedes. Buenos Aires, Argentina
+              Mercedes, Pcia. de Buenos Aires. Republica Argentina
             </li>
           </ul>
         </div>
