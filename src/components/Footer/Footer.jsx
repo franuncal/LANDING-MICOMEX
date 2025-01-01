@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p>
-          &copy; 2024 <strong>M.I Comercio Internacional</strong> || Todos los
+          © {new Date().getFullYear()} M.I Logística Internacional | Todos los
           derechos reservados.
         </p>
         <p>
